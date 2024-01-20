@@ -15,6 +15,7 @@ else:
 
 df_students = pd.read_csv('grades.csv', delimiter=',', header='infer')
 
+
 # Create a function that we can re-use
 def show_distribution(var_data):
     from matplotlib import pyplot as plt
