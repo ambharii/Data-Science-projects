@@ -1,3 +1,4 @@
+#ensemble algorith
 # Import modules we'll need for this notebook
 import pandas as pd
 from sklearn.linear_model import LinearRegression
@@ -49,20 +50,11 @@ y_train: The corresponding labels we'll use to train the model
 X_test: The feature values we'll use to validate the model
 y_test: The corresponding labels we'll use to validate the model'''
 
-#Let's try training our regression model by using a Lasso algorithm. 
-# We can do this by just changing the estimator in the training code.
-
-
+from sklearn.ensemble import RandomForestRegressor
 
 # Train the model
-model = DecisionTreeRegressor().fit(X_train, y_train)
+model = RandomForestRegressor().fit(X_train, y_train)
 print (model, "\n")
-
-# Visualize the model tree
-tree = export_text(model)
-print(tree)
-
-#So now we have a tree-based model, but is it any good? Let's evaluate it with the test data.
 
 # Evaluate the model using the test data
 predictions = model.predict(X_test)
@@ -83,5 +75,3 @@ z = np.polyfit(y_test, predictions, 1)
 p = np.poly1d(z)
 plt.plot(y_test,p(y_test), color='magenta')
 plt.show()
-
-
