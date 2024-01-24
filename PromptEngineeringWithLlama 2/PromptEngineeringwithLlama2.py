@@ -5,7 +5,7 @@ from langchain.schema.messages import get_buffer_string
 import os
 
 # Get a free API key from https://replicate.com/account/api-tokens
-os.environ["REPLICATE_API_TOKEN"] = "r8_10vJRsjIFVLK0TFLg0Pi0CiKy3MOxuc2N9IK2"
+os.environ["REPLICATE_API_TOKEN"] = "USE YOUR OWN GENERATED KEY"
 
 LLAMA2_70B_CHAT = "meta/llama-2-70b-chat:2d19859030ff705a87c746f7e96eea03aefb71f166725aee39692f1476566d48"
 LLAMA2_13B_CHAT = "meta/llama-2-13b-chat:f4e2de70d66816a838a89eeeb621910adffb0dd0baba3976c96980970978018d"
